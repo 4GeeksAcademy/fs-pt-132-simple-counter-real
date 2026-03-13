@@ -10,9 +10,19 @@ import '../styles/index.css'
 
 // components
 import Home from './components/Home';
+let timer = 0
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
-)
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+setInterval(() => {
+  timer++
+  console.log(timer)
+  if (timer == 1000000) timer = 0
+  root.render(
+    <React.StrictMode>
+      <Home seconds={timer} />
+    </React.StrictMode>,
+  )
+
+}, 1000)
