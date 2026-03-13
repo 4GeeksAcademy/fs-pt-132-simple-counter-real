@@ -30,12 +30,12 @@ const Home = ({seconds}) => {
 			<Test/>
 
 
-		<Digit num={seconds}/>
-		<Digit num={seconds}/>
-		<Digit num={seconds}/>
-		<Digit num={seconds}/>
-		<Digit num={seconds}/>
-		<Digit num={seconds}/>
+		<Digit num={seconds} estilos='d-inline bg-dark text-white p-5 mySuperClase'/>
+		<Digit num={seconds} estilos='d-inline bg-primary text-white p-5 mySuperClase'/>
+		<Digit num={seconds} estilos='d-inline bg-secondary text-white p-5 mySuperClase'/>
+		<Digit num={seconds} estilos='d-inline bg-danger text-white p-5 mySuperClase'/>
+		<Digit num={seconds} estilos='d-inline bg-warning text-white p-5 mySuperClase'/>
+		<Digit num={seconds} estilos='d-inline bg-success text-white p-5 mySuperClase'/>
 
 		</div>
 		

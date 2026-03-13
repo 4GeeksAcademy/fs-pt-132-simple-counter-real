@@ -1,8 +1,8 @@
 
-const Digit = ({num}) => {
+const Digit = ({num, estilos}) => {
 
     return (
-        <div className="d-inline">
+        <div className={estilos}>
             {num}
         </div>
     )
